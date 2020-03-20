@@ -1,0 +1,151 @@
+.tanysher-container {
+	.ts-header {
+		.navbar {
+			z-index: 1;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			&.secondary-color {
+				background-color: transparent;
+				&.scroll {
+					@media only screen and (min-width: 992px){
+						background-color: #000;
+					}
+				}
+				@media only screen and (max-width: 992px){
+					border-bottom: 1px solid #afaaa9;
+					background-color: #fff;
+				}
+			}
+			.nav-item {
+				&.avatar {
+					.nav-link {
+						.fa-user-circle-o {
+							font-size: 35px;
+						}
+					}
+				}
+				.nav-link {
+					color: #fff;
+					i {
+						font-size: 16px;
+					}
+					@media only screen and (max-width: 992px){
+						color: #000;
+					}
+					.before-effect {
+						position: relative;
+						&::before {
+							background-color: #fff;
+							top: 120%;
+							content: "";
+							height: 1px;
+							left: 0;
+							position: absolute;
+							width: 100%;
+							transform-origin: left;
+							-webkit-transform: scale(0,1);
+							-moz-transform: scale(0,1);
+							transform: scale(0,1);
+							-webkit-transition: -webkit-transform .1s ease-out 0s;
+							-moz-transition: -moz-transform .1s ease-out 0s;
+							transition: transform .1s ease-out 0s;
+							@media only screen and (max-width: 992px){
+								background-color: #000;
+							}
+						}
+					}
+					&:hover {
+						.before-effect {
+							&::before {
+								-webkit-transform: scale(1,1);
+								-moz-transform: scale(1,1);
+								transform: scale(1,1);
+								-webkit-transition: -webkit-transform .2s ease-out .1s;
+								-moz-transition: -moz-transform .2s ease-out .1s;
+								transition: transform .2s ease-out .1s;
+							}
+						}
+					}
+				}
+			}
+			.dropdown {
+				.dropdown-menu {
+					padding: .5rem;
+					.dropdown-item {
+						padding: .5rem;
+						font-size: .9rem;
+						-webkit-transition: all 0.1s linear;
+						transition: all 0.1s linear;
+						color: #000;
+					}
+					&.dropdown-secondary {
+						.dropdown-item {
+							&:hover {
+								background-color: #c59d5f;
+								border-radius: .125rem;
+								-webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+								box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+			&.navbar-dark {
+				.navbar-brand {
+					@media only screen and (max-width: 992px){
+						color: #000;
+					}
+				}
+				.navbar-toggler {
+					.navbar-toggler-icon {
+						@media only screen and (max-width: 992px){
+							background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+						}
+					}
+				}
+				.navbar-nav {
+					.nav-item {
+						.nav-link {
+							-webkit-transition: .35s;
+							transition: .35s;
+							cursor: pointer;
+							display: block;
+							font-size: 12px;
+							text-transform: uppercase;
+							letter-spacing: .35em;
+						}
+					}
+					&.nav-flex-icons {
+						-webkit-box-orient: horizontal;
+						-webkit-box-direction: normal;
+						-ms-flex-direction: row;
+						flex-direction: row;
+						.nav-item {
+							.nav-link {
+								line-height: 3;
+								.fab {
+									line-height: 2;
+									svg {
+										fill: #fff;
+										@media only screen and (max-width: 992px){
+											fill: #000;
+										}
+									}
+								}
+							}
+							&.separator {
+								margin: 16px 12px 0 12px;
+								@media only screen and (max-width: 992px){
+									background-color: #000;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

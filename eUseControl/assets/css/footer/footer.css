@@ -1,0 +1,34 @@
+.tanysher-container .ts-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 110px 0;
+}
+.tanysher-container .ts-footer .h4 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tanysher-container .ts-footer .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.tanysher-container .ts-footer .navbar-nav .separator {
+  margin-top: 3px;
+  height: 16px;
+}
+.tanysher-container .ts-footer .block {
+  margin: 15px 0;
+}
+.tanysher-container .ts-footer .block .l-info, .tanysher-container .ts-footer .block .r-info {
+  display: inline-block;
+  width: 115px;
+}
+.tanysher-container .ts-footer .block .r-info {
+  text-align: right;
+}
+.tanysher-container .ts-footer a {
+  font-size: 16px;
+}
+.tanysher-container .ts-footer a:hover {
+  color: #c59d5f;
+}

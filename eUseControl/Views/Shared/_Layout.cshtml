@@ -1,0 +1,29 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - TanySher</title>
+
+    @Styles.Render("~/bundles/tanysher/css")
+
+    @if (IsSectionDefined("PageStyle"))
+    {
+        @RenderSection("PageStyle");
+    }
+
+</head>
+<body>
+    <div class="tanysher-container">
+        <!--/.Navbar -->
+        @Html.Partial("_Header")
+
+        @RenderBody()
+
+        @Html.Partial("_Footer")
+    </div>
+
+</body>
+@Scripts.Render("~/bundles/tanysher/js")
+</html>
