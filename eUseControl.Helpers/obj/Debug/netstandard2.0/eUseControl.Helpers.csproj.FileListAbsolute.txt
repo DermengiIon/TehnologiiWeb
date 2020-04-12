@@ -1,8 +1,0 @@
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\bin\Debug\netstandard2.0\eUseControl.Helpers.deps.json
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\bin\Debug\netstandard2.0\eUseControl.Helpers.dll
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\bin\Debug\netstandard2.0\eUseControl.Helpers.pdb
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\obj\Debug\netstandard2.0\eUseControl.Helpers.csprojAssemblyReference.cache
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\obj\Debug\netstandard2.0\eUseControl.Helpers.AssemblyInfoInputs.cache
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\obj\Debug\netstandard2.0\eUseControl.Helpers.AssemblyInfo.cs
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\obj\Debug\netstandard2.0\eUseControl.Helpers.dll
-D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.Helpers\obj\Debug\netstandard2.0\eUseControl.Helpers.pdb

@@ -1,13 +1,13 @@
 ﻿<header class="ts-header">
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color">
-        <a class="navbar-brand" href="@Url.Action("Index","Home")">TanySher</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ts-navbar" aria-controls="ts-navbar" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100 px-5 secondary-color">
+        <a class="navbar-brand order-lg-0 order-1 mx-auto mx-lg-0" href="/">TanySher</a>
+        <button class="navbar-toggler px-0" type="button" data-toggle="collapse" data-target="#ts-navbar" aria-controls="ts-navbar" aria-expanded="false">
+            <i class="fa fa-bars hover-effect" aria-hidden="true"></i>
         </button>
-        <div class="collapse navbar-collapse" id="ts-navbar">
-            <ul class="navbar-nav ml-auto mr-auto">
+        <div class="collapse navbar-collapse order-2" id="ts-navbar">
+            <ul class="navbar-nav ml-auto mr-auto text-uppercase">
                 <li class="nav-item active">
-                    <a class="nav-link" href="@Url.Action("Index","Home")"><span class="before-effect">Acasă</span></a>
+                    <a class="nav-link" href="/"><span class="before-effect">Acasă</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><span class="before-effect">Features</span></a>
@@ -18,37 +18,51 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="before-effect">Dropdown</span></a>
                     <div class="dropdown-menu dropdown-secondary">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#"><span class="before-effect">Action</span></a>
+                        <a class="dropdown-item" href="#"><span class="before-effect">Another action</span></a>
+                        <a class="dropdown-item" href="#"><span class="before-effect">Something else here</span></a>
                     </div>
                 </li>
             </ul>
-            <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link">
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link hover-effect">
                         <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                         <sup>0</sup>
                     </a>
                 </li>
-                <li class="nav-item separator">
+                <li class="nav-item d-flex align-items-center">
+                    <span class="separator bg-white"></span>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link hover-effect">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </a>
                 </li>
-                <li class="nav-item separator">
+                <li class="nav-item d-flex align-items-center">
+                    <span class="separator bg-white"></span>
                 </li>
                 <li class="nav-item avatar dropdown">
                     <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary">
-                        <a class="dropdown-item" href="../MINTON-Full_Version/HTML/Horizontal/dark/dist/index.html">Admin</a>
-                        <a class="dropdown-item" href="/login">Autentificare</a>
-                        <a class="dropdown-item" href="/register">Înregistrare</a>
-                        <a class="dropdown-item" href="@Url.Action("Logout","Home")">Ieșire</a>
+                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary text-uppercase">
+                        <a class="dropdown-item shadow-effect" href="../MINTON-Full_Version/HTML/Horizontal/dark/dist/index.html">
+                            <i class="fa fa-user icon" aria-hidden="true"></i>
+                            <span>Profil</span>
+                        </a>
+                        <a class="dropdown-item shadow-effect" href="/login">
+                            <i class="fa fa-sign-in icon" aria-hidden="true"></i>
+                            <span>Autentificare</span>
+                        </a>
+                        <a class="dropdown-item shadow-effect" href="/register">
+                            <span>Înregistrare</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item shadow-effect" href="@Url.Action("Logout","Home")">
+                            <i class="fa fa-sign-out icon" aria-hidden="true"></i>
+                            <span>Ieșire</span>
+                        </a>
                     </div>
                 </li>
             </ul>

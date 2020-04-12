@@ -4,11 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using eUseControl.Models;
+using eUseControl.BusinessLogic;
+using eUseControl.Domain.Entities.User;
+using eUseControl.BusinessLogic.Interfaces;
 
 namespace eUseControl.Controllers
 {
     public class RegisterController : Controller
     {
+        private readonly ISession _session;
+        public RegisterController()
+        {
+            var bl = new MyBusinessLogic();
+            _session = bl.getSessionBL();
+        }
         // GET: Register
         public ActionResult Index()
         {
@@ -18,7 +27,27 @@ namespace eUseControl.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(UserRegister register)
         {
-            return View("Register");
+            if (ModelState.IsValid)
+            {
+                URegisterData data = new URegisterData
+                {
+                    Name = register.Name,
+                    Surname = register.Surname,
+                    Email = register.Email,
+                    Password = register.Password
+                };
+                var userRegister = _session.UserRegister(data);
+                if (userRegister.Status)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", userRegister.StatusMsg);
+                    return View("Register");
+                }
+            }
+                return View("Register");
         }
     }
 }

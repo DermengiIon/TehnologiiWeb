@@ -80,3 +80,8 @@ D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\eUseControl.Busines
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\eUseControl.Domain.pdb
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\Newtonsoft.Json.dll
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\Newtonsoft.Json.xml
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\EntityFramework.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\EntityFramework.SqlServer.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\EntityFramework.xml
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\EntityFramework.SqlServer.xml
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\eUseControl.BusinessLogic.dll.config

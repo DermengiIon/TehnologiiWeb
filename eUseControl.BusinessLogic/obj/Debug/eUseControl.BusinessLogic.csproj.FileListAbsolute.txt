@@ -1,0 +1,15 @@
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\eUseControl.BusinessLogic.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\eUseControl.BusinessLogic.pdb
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\eUseControl.Domain.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\eUseControl.Helpers.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\eUseControl.Domain.pdb
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\eUseControl.Helpers.pdb
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.csprojAssemblyReference.cache
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.csproj.CopyComplete
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\obj\Debug\eUseControl.BusinessLogic.pdb
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\eUseControl.BusinessLogic.dll.config
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\EntityFramework.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\EntityFramework.xml
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml

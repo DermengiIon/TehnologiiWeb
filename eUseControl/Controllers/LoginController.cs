@@ -29,6 +29,19 @@ namespace eUseControl.Controllers
         {
             if (ModelState.IsValid)
             {
+                HttpCookie cookie = new HttpCookie("TanySher_User");
+                if (login.Remember == true)
+                {
+                    cookie["email"] = login.Email;
+                    cookie["password"] = login.Password;
+                    cookie.Expires = DateTime.Now.AddDays(2);
+                    HttpContext.Request.Cookies.Add(cookie);
+                }
+                else
+                {
+                    cookie.Expires = DateTime.Now.AddDays(-1);
+                    HttpContext.Request.Cookies.Add(cookie);
+                }
                 ULoginData data = new ULoginData
                 {
                     Email = login.Email,
@@ -46,7 +59,6 @@ namespace eUseControl.Controllers
                     ModelState.AddModelError("", userLogin.StatusMsg);
                     return View("Login");
                 }
-
             }
             return View("Login");
         }

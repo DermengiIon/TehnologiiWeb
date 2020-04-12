@@ -18,13 +18,21 @@ body {
     .tanysher-container .separator {
         width: 1px;
         height: 20px;
-        background-color: #fff;
         margin: 0 12px;
     }
 
     .tanysher-container button:focus {
         outline: none;
     }
+
+    .tanysher-container .hover-effect {
+        -webkit-transition: 0.35s;
+        transition: 0.35s;
+    }
+
+        .tanysher-container .hover-effect:hover {
+            color: #c59d5f !important;
+        }
 
     .tanysher-container a {
         -webkit-transition: color 0.2s ease-out;

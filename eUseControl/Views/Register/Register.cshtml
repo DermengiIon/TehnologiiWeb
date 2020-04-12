@@ -42,19 +42,30 @@
                             @Html.AntiForgeryToken()
                             @Html.ValidationSummary(true)
                             <div class="form-group">
-                                @Html.LabelFor(x => x.FullName)
-                                @Html.TextBoxFor(x => x.FullName, new
+                                @Html.LabelFor(x => x.Name)
+                                @Html.TextBoxFor(x => x.Name, new
                                 {
                                     @class = "form-control",
                                     placeholder = "Introduce-ți numele",
                                     id = "",
                                     name = "name"
                                 })
-                                @Html.ValidationMessageFor(x => x.FullName)
+                                @Html.ValidationMessageFor(x => x.Name)
                             </div>
                             <div class="form-group">
-                                @Html.LabelFor(x => x.EmailAddress)
-                                @Html.TextBoxFor(x => x.EmailAddress, new
+                                @Html.LabelFor(x => x.Surname)
+                                @Html.TextBoxFor(x => x.Surname, new
+                                {
+                                    @class = "form-control",
+                                    placeholder = "Introduce-ți familia",
+                                    id = "",
+                                    name = "surname"
+                                })
+                                @Html.ValidationMessageFor(x => x.Surname)
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(x => x.Email)
+                                @Html.TextBoxFor(x => x.Email, new
                                 {
                                     @class = "form-control",
                                     placeholder = "Introduce-ți adresa de email",
