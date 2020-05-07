@@ -20,6 +20,18 @@ namespace eUseControl
             bundles.Add(new ScriptBundle("~/bundles/tanysher/js").Include("~/Scripts/jquery-{version}.js",
                 "~/Scripts/bootstrap.min.js",
                 "~/assets/js/main.js"));
+
+            /*ADMIN******************************************************************************/
+            bundles.Add(new StyleBundle("~/bundles/tsAdmin/css").Include("~/Content/bootstrap.min.css",
+                "~/assets/css/admin/icons.min.css",
+                "~/assets/css/admin/app.min.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/tsAdmin/js").Include("~/assets/js/admin/vendor.min.js",
+                "~/assets/js/admin/libs/jquery-knob/jquery.knob.min.js",
+                "~/assets/js/admin/libs/peity/jquery.peity.min.js",
+                "~/assets/js/admin/libs/jquery-sparkline/jquery.sparkline.min.js",
+                "~/assets/js/admin/pages/dashboard-1.init.js",
+                "~/assets/js/admin/app.min.js"));
         }
     }
 }

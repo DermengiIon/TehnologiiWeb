@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using eUseControl.BusinessLogic;
-using eUseControl.Domain.Entities.User;
+using eUseControl.Domain.Entities.User.Login;
 using eUseControl.BusinessLogic.Interfaces;
 using eUseControl.Models;
 
@@ -29,19 +29,6 @@ namespace eUseControl.Controllers
         {
             if (ModelState.IsValid)
             {
-                HttpCookie cookie = new HttpCookie("TanySher_User");
-                if (login.Remember == true)
-                {
-                    cookie["email"] = login.Email;
-                    cookie["password"] = login.Password;
-                    cookie.Expires = DateTime.Now.AddDays(2);
-                    HttpContext.Request.Cookies.Add(cookie);
-                }
-                else
-                {
-                    cookie.Expires = DateTime.Now.AddDays(-1);
-                    HttpContext.Request.Cookies.Add(cookie);
-                }
                 ULoginData data = new ULoginData
                 {
                     Email = login.Email,
@@ -52,6 +39,8 @@ namespace eUseControl.Controllers
                 var userLogin = _session.UserLogin(data);
                 if (userLogin.Status)
                 {
+                    HttpCookie cookie = _session.GenCookie(login.Email);
+                    ControllerContext.HttpContext.Response.Cookies.Add(cookie);
                     return RedirectToAction("Index", "Home");
                 }
                 else

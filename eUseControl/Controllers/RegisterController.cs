@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using eUseControl.Models;
 using eUseControl.BusinessLogic;
-using eUseControl.Domain.Entities.User;
+using eUseControl.Domain.Entities.User.Register;
 using eUseControl.BusinessLogic.Interfaces;
 
 namespace eUseControl.Controllers

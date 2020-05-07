@@ -1,0 +1,23 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title | Admin | TanySher</title>
+
+    @Styles.Render("~/bundles/tsAdmin/css")
+
+    @if (IsSectionDefined("PageStyle"))
+    {
+        @RenderSection("PageStyle");
+    }
+
+</head>
+<body>
+    <div class="tanysher-container">
+        @RenderBody()
+    </div>
+</body>
+@Scripts.Render("~/bundles/tsAdmin/js")
+</html>

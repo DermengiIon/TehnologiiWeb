@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Web;
+using eUseControl.Domain.Entities.User.Login;
+using eUseControl.Domain.Entities.User.Register;
 using eUseControl.Domain.Entities.User;
 
 namespace eUseControl.BusinessLogic.Interfaces
@@ -11,5 +9,7 @@ namespace eUseControl.BusinessLogic.Interfaces
     {
         ULoginResp UserLogin(ULoginData data);
         URegisterResp UserRegister(URegisterData data);
+        HttpCookie GenCookie(string loginCredential);
+        UProfileData GetUserByCookie(string apiCookieValue);
     }
 }

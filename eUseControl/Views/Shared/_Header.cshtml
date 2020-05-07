@@ -1,4 +1,5 @@
-﻿<header class="ts-header">
+﻿@model eUseControl.Models.UserProfile
+<header class="ts-header">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100 px-5 secondary-color">
         <a class="navbar-brand order-lg-0 order-1 mx-auto mx-lg-0" href="/">TanySher</a>
         <button class="navbar-toggler px-0" type="button" data-toggle="collapse" data-target="#ts-navbar" aria-controls="ts-navbar" aria-expanded="false">
@@ -47,10 +48,13 @@
                         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary text-uppercase">
-                        <a class="dropdown-item shadow-effect" href="../MINTON-Full_Version/HTML/Horizontal/dark/dist/index.html">
+                    @if(Model != null)
+                    {
+                        <a class="dropdown-item shadow-effect" href="@Model.ProfileUrl">
                             <i class="fa fa-user icon" aria-hidden="true"></i>
                             <span>Profil</span>
                         </a>
+                    }
                         <a class="dropdown-item shadow-effect" href="/login">
                             <i class="fa fa-sign-in icon" aria-hidden="true"></i>
                             <span>Autentificare</span>
@@ -59,7 +63,7 @@
                             <span>Înregistrare</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item shadow-effect" href="@Url.Action("Logout","Home")">
+                        <a class="dropdown-item shadow-effect" href="/logout">
                             <i class="fa fa-sign-out icon" aria-hidden="true"></i>
                             <span>Ieșire</span>
                         </a>

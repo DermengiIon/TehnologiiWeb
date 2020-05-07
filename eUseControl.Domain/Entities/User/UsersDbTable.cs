@@ -67,12 +67,13 @@ namespace eUseControl.Domain.Entities.User
         [DataType(DataType.Date)]
         public DateTime UpdateRegisterDate { get; set; }
 
-        //LoginDateTime
-        [DataType(DataType.DateTime)]
-        public Nullable<DateTime> LoginDateTime { get; set; }
-
-        //LoginIp
+        //PrivateIp
         [StringLength(15)]
-        public string LoginIp { get; set; }
+        public string PrivateIp { get; set; }
+
+        //LastLogin
+        [DataType(DataType.Date)]
+        public Nullable<DateTime> LastLogin { get; set; }
+
     }
 }

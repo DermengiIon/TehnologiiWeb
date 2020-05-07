@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\User\ULoginData.cs" />
-    <Compile Include="Entities\User\ULoginResp.cs" />
-    <Compile Include="Entities\User\URegisterData.cs" />
-    <Compile Include="Entities\User\URegisterResp.cs" />
+    <Compile Include="Entities\User\SessionsDbTable.cs" />
+    <Compile Include="Entities\User\Login\ULoginData.cs" />
+    <Compile Include="Entities\User\Login\ULoginResp.cs" />
+    <Compile Include="Entities\User\Register\URegisterData.cs" />
+    <Compile Include="Entities\User\Register\URegisterResp.cs" />
+    <Compile Include="Entities\User\UProfileData.cs" />
     <Compile Include="Entities\User\UsersDbTable.cs" />
     <Compile Include="Enums\URole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +58,9 @@
       <Name>eUseControl.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Entities\Admin\" />
+    <Folder Include="Entities\Guest\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using eUseControl.Domain.Entities.User;
 
 namespace eUseControl.BusinessLogic.DbModel
@@ -12,8 +7,9 @@ namespace eUseControl.BusinessLogic.DbModel
     {
         public UserContext() : base("name = eUseControl")
         {
-
+            /*Database.SetInitializer<UserContext>(null);*/
         }
+        public virtual DbSet<SessionsDbTable> Sessions { get; set; }
         public virtual DbSet<UsersDbTable> Users { get; set; }
     }
 }

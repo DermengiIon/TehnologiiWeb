@@ -33,6 +33,18 @@ namespace eUseControl
                 url: "logout",
                 defaults: new { controller = "Home", action = "Logout" }
             );
+            routes.MapRoute(
+                name: "Profile",
+                url: "profile",
+                defaults: new { controller = "Home", action = "UserProfile" }
+            );
+
+            /*ADMIN********************************************************/
+            routes.MapRoute(
+                name: "Panoul",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Admin", action = "Index" }
+            );
         }
     }
 }
