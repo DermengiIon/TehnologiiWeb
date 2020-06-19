@@ -35,7 +35,7 @@ namespace eUseControl.Controllers
             }
         }
 
-        /*[UserMod]*/
+        [UserMod]
         public ActionResult UserProfile()
         {
             return View("Profile");

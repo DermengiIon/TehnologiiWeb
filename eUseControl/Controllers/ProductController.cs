@@ -8,6 +8,7 @@ using System.IO;
 using eUseControl.BusinessLogic.Interfaces;
 using eUseControl.BusinessLogic;
 using eUseControl.Domain.Entities.Admin;
+using eUseControl.App_Start;
 
 namespace eUseControl.Controllers
 {
@@ -20,17 +21,19 @@ namespace eUseControl.Controllers
             _product = bl.getProductBL();
         }
         // GET: Product
+        [AdminMod]
         public ActionResult Index()
         {  
             MProducts prod =  new MProducts();
             prod.Products = _product.Get();
             return View("Product-list",prod);
         }
-
+        [AdminMod]
         public ActionResult Add()
         {
             return View("Product-add");
         }
+        [AdminMod]
         [HttpPost]
         public ActionResult Add(MProduct prod)
         {
@@ -53,7 +56,9 @@ namespace eUseControl.Controllers
         }
         public ActionResult Products()
         {
-            return View();
+            MProducts prod = new MProducts();
+            prod.Products = _product.Get();
+            return View(prod);
         }
     }
 }
