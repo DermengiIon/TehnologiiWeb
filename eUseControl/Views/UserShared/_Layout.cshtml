@@ -1,0 +1,42 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title | TanySher</title>
+
+    @if (IsSectionDefined("PageStyle"))
+    {
+        @RenderSection("PageStyle");
+    }
+
+    @Styles.Render("~/bundles/app/css")
+    @Styles.Render("~/bundles/footer/css")
+
+</head>
+<body>
+    <!-- Begin page -->
+    <div id="wrapper" class="ts-default">
+
+        @Html.Partial("~/Views/UserShared/_Header.cshtml")
+
+        <div class="content-page">
+
+            @RenderBody()
+            @Html.Partial("~/Views/UserShared/_Footer.cshtml")
+
+        </div>
+    </div>
+    <!-- END wrapper -->
+
+    @Scripts.Render("~/bundles/vendor/js")
+
+    @if (IsSectionDefined("PageScript"))
+    {
+        @RenderSection("PageScript");
+    }
+
+    @Scripts.Render("~/bundles/app/js")
+</body>
+</html>

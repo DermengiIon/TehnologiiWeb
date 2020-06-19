@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using eUseControl.Domain.Entities.User;
+using eUseControl.Domain.Entities.Admin;
 
 namespace eUseControl.BusinessLogic.DbModel
 {
@@ -11,5 +12,6 @@ namespace eUseControl.BusinessLogic.DbModel
         }
         public virtual DbSet<SessionsDbTable> Sessions { get; set; }
         public virtual DbSet<UsersDbTable> Users { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
     }
 }

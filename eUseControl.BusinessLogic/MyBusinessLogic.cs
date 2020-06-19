@@ -13,5 +13,9 @@ namespace eUseControl.BusinessLogic
         {
             return new SessionBL();
         }
+        public IProduct getProductBL()
+        {
+            return new ProductBL();
+        }
     }
 }

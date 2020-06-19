@@ -11,7 +11,7 @@ namespace eUseControl.Controllers
     public class AdminController : BaseController
     {
         // GET: Admin
-        [AdminMod]
+       /* [AdminMod]*/
         public ActionResult Index()
         {
            /* SessionStatus();

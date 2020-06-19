@@ -6,18 +6,38 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title | Admin | TanySher</title>
 
-    @Styles.Render("~/bundles/tsAdmin/css")
-
     @if (IsSectionDefined("PageStyle"))
     {
         @RenderSection("PageStyle");
     }
 
+    @Styles.Render("~/bundles/app/css")
+
 </head>
 <body>
-    <div class="tanysher-container">
-        @RenderBody()
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        @Html.Partial("~/Views/AdminShared/_Header.cshtml")
+        @Html.Partial("~/Views/AdminShared/_Left-sidebar.cshtml")
+
+        <div class="content-page">
+
+            @RenderBody()
+            @Html.Partial("~/Views/AdminShared/_Footer.cshtml")
+
+        </div>
     </div>
+    <!-- END wrapper -->
+    @Html.Partial("~/Views/AdminShared/_Right-sidebar.cshtml")
+
+    @Scripts.Render("~/bundles/vendor/js")
+
+    @if (IsSectionDefined("PageScript"))
+    {
+        @RenderSection("PageScript");
+    }
+
+    @Scripts.Render("~/bundles/app/js")
 </body>
-@Scripts.Render("~/bundles/tsAdmin/js")
 </html>

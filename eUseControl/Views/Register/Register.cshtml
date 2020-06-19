@@ -2,12 +2,9 @@
 @model eUseControl.Models.UserRegister
 @{
     ViewBag.Title = "Register";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/UserShared/_Layout.cshtml";
 }
 
-@section PageStyle {
-    @Styles.Render("~/bundles/assets/css/register")
-}
 <div class="account-pages pb-5">
     <div class="container">
         <div class="row justify-content-center">
@@ -88,17 +85,6 @@
                                 <button class="btn btn-primary btn-block" type="submit"> Înregistrare </button>
                             </div>
                         }
-
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="checkbox-signup">
-                                <label class="custom-control-label" for="checkbox-signup">Accept <a href="javascript: void(0);" class="text-dark">Termeni și condiții</a></label>
-                            </div>
-                        </div>
-
-
-
-
 
                         <div class="text-center">
                             <h5 class="mt-3 text-muted">Înregistrați-vă folosind</h5>

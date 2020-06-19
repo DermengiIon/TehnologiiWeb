@@ -87,3 +87,4 @@ D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\EntityFramework.Sql
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\eUseControl.BusinessLogic.dll.config
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\eUseControl.Helpers.dll
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\eUseControl.Helpers.pdb
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl\bin\Entities\Admin\Product.cs

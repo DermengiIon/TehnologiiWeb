@@ -13,3 +13,4 @@ D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\EntityFramework.xml
 D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+D:\UNIVER2018\SIMESTRUL_IV\WEB\Laboratorul_2\eUseControl.BusinessLogic\bin\Debug\Entities\Admin\Product.cs

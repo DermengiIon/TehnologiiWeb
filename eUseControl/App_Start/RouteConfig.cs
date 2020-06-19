@@ -18,32 +18,53 @@ namespace eUseControl
                 url: "",
                 defaults: new { controller = "Home", action = "Index" }
             );
+            
             routes.MapRoute(
-                name: "Register",
-                url: "register",
-                defaults: new { controller = "Register", action = "Index" }
+                name: "Dashboard",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Admin", action = "Index" }
             );
+
             routes.MapRoute(
-                name: "Login",
-                url: "login",
-                defaults: new { controller = "Login", action = "Index" }
+                name: "ProductList",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Product", action = "Index" }
             );
+
             routes.MapRoute(
-                name: "Logout",
-                url: "logout",
-                defaults: new { controller = "Home", action = "Logout" }
+                name: "ProductAdd",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Product", action = "Add" }
             );
+
+            routes.MapRoute(
+                name: "Products",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Product", action = "Products" }
+            );
+
             routes.MapRoute(
                 name: "Profile",
-                url: "profile",
+                url: "{controller}/{action}",
                 defaults: new { controller = "Home", action = "UserProfile" }
             );
 
-            /*ADMIN********************************************************/
             routes.MapRoute(
-                name: "Panoul",
+                name: "Login",
                 url: "{controller}/{action}",
-                defaults: new { controller = "Admin", action = "Index" }
+                defaults: new { controller = "Login", action = "Index" }
+            );
+
+            routes.MapRoute(
+                name: "Logout",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Logout" }
+            );
+
+            routes.MapRoute(
+                name: "Register",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Register", action = "Index" }
             );
         }
     }

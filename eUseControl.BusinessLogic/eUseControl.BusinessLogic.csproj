@@ -57,8 +57,10 @@
     <Compile Include="DbModel\AdminContext.cs" />
     <Compile Include="DbModel\GuestContext.cs" />
     <Compile Include="DbModel\UserContext.cs" />
+    <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="MyBusinessLogic.cs" />
+    <Compile Include="ProductBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionBL.cs" />
   </ItemGroup>
